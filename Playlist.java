@@ -78,10 +78,6 @@ public class Playlist {
                 case 0:
                     System.out.println("___SAINDO...___");
                     return;
-                case 4:
-                    System.out.println("AAAAAAAAAAAAAA");
-                    System.out.println(playlist.get(0).getTitulo());
-                    break;
                 default:
                     System.out.println("___VALOR INVÁLIDO___ \nEscolha uma das Opções válidas! \n \n");
             }
