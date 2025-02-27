@@ -46,6 +46,13 @@ public class Playlist {
         }
     }
 
+public void tempoTotal(){
+    double total = 0;
+    for (Musica musica : playlist) {
+        total+= musica.getDuracao();
+    }
+    System.out.println("Tempo total: " + total + "\n");
+}
 
     public void verPLaylist(){
         for (Musica i : playlist) {
@@ -65,6 +72,7 @@ public class Playlist {
                 case 1:
                     System.out.println("___PLAYLIST___");
                     verPLaylist();
+                    tempoTotal();
                     break;
                 case 2:
                     System.out.println("___ADICIONANDO MÚSICA___");
